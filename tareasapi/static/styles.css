@@ -1,0 +1,121 @@
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1REM = 10PX */
+}
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+body{
+    background-color: #f3f4f6;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* Globales */
+a{
+    text-decoration: none;
+    color: #000;
+}
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+img{
+    max-width: 100%; /*HACK PARA LAS IMG*/
+    display: block;
+}
+
+/* BASE */
+/* header - footer */
+.header,
+.footer{
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+}
+/* logo */
+img{
+    width: 20rem;
+}
+
+/* INDEX */
+.contenedor__inicio{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 50vh;
+    width: 100%;
+}
+.contenedor__inicio-img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor__inicio-img img{
+    min-width: 25rem;
+    width: 45rem;
+}
+.contenedor__inicio-texto{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 10rem;
+}
+.contenedor__inicio-texto a{
+    background-color: #000;
+    color: #FFF;
+    width: fit-content;
+    padding: 1rem;
+    margin-top: 1.6rem;
+}
+
+/* AGREGAR */
+.contenedor__agregar{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: space-between;
+    align-items: center;
+}
+.contenedor__agregar button{
+    background-color: #000;
+    color: #FFF;
+    padding: .6rem;
+    margin-left: 1rem;
+    border: none;
+}
+.contenedor__agregar a{
+    background-color: #000;
+    color: #FFF;
+    padding: 1rem;
+}
+
+/* TAREAS */
+.contenedor__tareas{
+    display: flex;
+    flex-direction: column;
+    min-height: 70vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contenedor__tareas button{
+    background-color: #000;
+    color: #FFF;
+    padding: .6rem;
+    margin-left: 1rem;
+    border: none;
+}
+.contenedor__tareas a{
+    background-color: #000;
+    color: #FFF;
+    padding: 1rem;
+}
+

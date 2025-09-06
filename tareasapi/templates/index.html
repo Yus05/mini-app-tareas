@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Inicio{% endblock %}
+
+
+{% block content %}
+    <div class="contenedor__inicio contenedor">
+
+        <div class="contenedor__inicio-img">
+            <img src="../static/images/nota-correo-realista-fondo-transparente.png" alt="hero-img">
+        </div>
+
+        <div class="contenedor__inicio-texto">
+            <h1>Anota, recuerda, actúa</h1>
+        
+            <p>Organiza tus ideas en segundos con esta sencilla app de tareas. No necesitas registros ni complicaciones: solo escribe, guarda y mantén tus pendientes siempre a la vista..</p>
+    
+            <a href="{{ url_for('agregar') }}">Agregar Tarea</a>
+        </div>
+
+    </div>
+{% endblock %}
+

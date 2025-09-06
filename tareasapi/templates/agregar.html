@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Agregar Tarea{% endblock %}
+
+{% block content %}
+
+    <div class="contenedor__agregar contenedor">
+
+        <h1>Escribe lo que necesitas recordar</h1>
+
+        <form method="POST">
+            <input type="text" name="tarea" placeholder="Escribe una tarea" required>
+            <button type="submit">Agregar</button>
+        </form>
+
+        <a href="{{ url_for('tareas') }}">Ver las Tareas</a>
+        
+    </div>
+
+{% endblock %}
+
+
